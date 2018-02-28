@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de panier </title>
+    <script src="gestionpanier.js"></script>
+    <style>
+        section article {
+            float: left;
+            width: 200px;
+            background-color: #CCC;
+            border-radius: 10px;
+            margin: 0 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        section::after {
+            clear:both;
+            display: block;
+            content: "";
+        }
+        section article button {
+            border: 1px solid transparent;
+            padding: 5px;
+            border-radius: 10px;
+            opacity: .5;
+            cursor: pointer;
+        }
+        section article button:hover {
+            opacity: 1;
+            border: 1px solid black;
+        }
+        section article button:first-of-type {
+            background-color: green;
+            color: #FFF;
+        }
+
+        section article button:last-of-type {
+            background-color: red;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <article>
+        <h3>Fondation foudroyée</h3>
+        <button onclick="addProduct('livre');">Ajouter</button>
+        <button onclick="deleteProduct('livre');">Supprimer</button>
+    </article>
+    <article>
+        <h3>PS3</h3>
+        <button onclick="addProduct('console');">Ajouter</button>
+        <button onclick="deleteProduct('console');">Supprimer</button>
+    </article>
+    <article>
+        <h3>Orchidées</h3>
+        <button onclick="addProduct('fleur');">Ajouter</button>
+        <button onclick="deleteProduct('fleur');">Supprimer</button>
+    </article>
+    <article>
+        <h3>Liste des articles</h3>
+        <div id="resultat">
+            aucun article pour l'instant
+        </div>
+    </article>
+</section>
+</body>
+</html>
+
+
+
+
