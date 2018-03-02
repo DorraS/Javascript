@@ -1,8 +1,8 @@
 /**
  * gestion du formulaire
  */
-//esf ce que le fichier js est bien chargé
-console.log('le fichier js bien chargé');
+//esf ce que le js est bien chargé
+console.log('le js bien chargé');
 //code exécuté lorsque leDOM ets chargé
 document.addEventListener("DOMContentLoaded", function (event) {
     console.log('execution du code js');
